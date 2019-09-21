@@ -48,5 +48,17 @@
 				</div>
 			</div>
 		</footer>
+
+		<script src="<?= base_url('assets/plugins/SweetAlert/dist/sweetalert2.all.min.js');?>"></script>
+		<script>
+			const pesan = document.querySelector('#pesan');
+			pesan.addEventListener('click',function(){
+				Swal.fire({
+					title:'Pesan Notifikasi by KangMust',
+					text:'Login Terlebih Dahulu Jika Ingin Membeli',
+					type:'warning'
+				});
+			});
+		</script>
   </body>
 </html>
